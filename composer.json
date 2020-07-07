@@ -1,0 +1,26 @@
+{
+    "name": "sarah-systems/sssm-auth",
+    "description": "sssm auth module",
+    "minimum-stability": "dev",
+    "homepage": "https://www.sarah-sys.co.jp/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shoji Ogura <kohenji@sarahsytems.com>",
+            "email": "kohenji@sarahsystems.com"
+        }
+    ],
+    "require": {
+        "sarah-systems/sssm-base": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sssm\\Auth\\": "src"
+        }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "@composer dump-autoload"
+        ]
+    }
+}
